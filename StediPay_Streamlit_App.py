@@ -61,73 +61,180 @@ st.markdown("""
   @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400;500&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
 
   html, body, [class*="css"] { font-family: 'Barlow', sans-serif; }
-  .stApp { background: #F4F7FC; color: #06102B; }
+  
+  /* MAIN BACKGROUND – DARK BLUE */
+  .stApp {
+    background: #0A1F4E;
+    color: #E0E9F5;
+  }
 
-  /* sidebar */
-  [data-testid="stSidebar"] { background: #0A1F4E !important; }
-  [data-testid="stSidebar"] * { color: #8AAED6 !important; }
-  [data-testid="stSidebar"] a { color: #5B8DD9 !important; }
+  /* Sidebar – keep consistent dark */
+  [data-testid="stSidebar"] {
+    background: #06122E !important;
+  }
+  [data-testid="stSidebar"] * {
+    color: #B8CCE8 !important;
+  }
+  [data-testid="stSidebar"] a {
+    color: #7A9AD6 !important;
+  }
 
+  /* Metric cards */
   .metric-card {
-    background: #ffffff;
-    border: 1px solid #D0DCF0; border-left: 4px solid #1246A0;
-    border-radius: 0; padding: 16px 20px; margin: 6px 0;
+    background: #0D264A;
+    border: 1px solid #2A4878;
+    border-left: 4px solid #C9A84C;
+    border-radius: 0;
+    padding: 16px 20px;
+    margin: 6px 0;
   }
-  .metric-val { font-size: 2rem; font-weight: 700; color: #0A1F4E;
-    font-family: 'Barlow Condensed', sans-serif; }
-  .metric-lbl { font-size: 0.75rem; color: #5B8DD9; text-transform: uppercase;
-    letter-spacing: 0.1em; font-family: 'IBM Plex Mono', monospace; }
+  .metric-val {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #F5F0E8;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .metric-lbl {
+    font-size: 0.75rem;
+    color: #B8CCE8;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'IBM Plex Mono', monospace;
+  }
 
+  /* Step cards */
   .step-card {
-    background: #ffffff; padding: 14px 18px; margin: 6px 0;
-    border-left: 3px solid #1246A0; border: 1px solid #D0DCF0;
+    background: #0D264A;
+    padding: 14px 18px;
+    margin: 6px 0;
+    border-left: 3px solid #C9A84C;
+    border: 1px solid #2A4878;
   }
-  .step-num { color: #1246A0; font-weight: 600;
-    font-family: 'IBM Plex Mono', monospace; }
+  .step-num {
+    color: #C9A84C;
+    font-weight: 600;
+    font-family: 'IBM Plex Mono', monospace;
+  }
 
   .tx-hash {
-    font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem;
-    color: #1246A0; background: #EDF4FC; padding: 4px 8px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: #7A9AD6;
+    background: #112B52;
+    padding: 4px 8px;
   }
 
-  .badge-green  { background:#e8f8f0; color:#1a6040; padding:2px 10px; border:1px solid #a0d8b8; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; }
-  .badge-gold   { background:#EDF4FC; color:#1246A0; padding:2px 10px; border:1px solid #C4D8F0; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; }
-  .badge-teal   { background:#EDF4FC; color:#2E68C8; padding:2px 10px; border:1px solid #C4D8F0; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; }
-  .badge-orange { background:#fff4e8; color:#8a4000; padding:2px 10px; border:1px solid #f0c890; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; }
-  .badge-red    { background:#fff0f0; color:#7a1010; padding:2px 10px; border:1px solid #f0b0b0; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; }
+  /* Badges */
+  .badge-green  { background:#103A2A; color:#5CD99A; padding:2px 10px; border:1px solid #1E7A4A; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; }
+  .badge-gold   { background:#2A2A10; color:#E8C87A; padding:2px 10px; border:1px solid #A8883A; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; }
+  .badge-teal   { background:#0D3A4A; color:#5BC8E0; padding:2px 10px; border:1px solid #2A7890; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; }
+  .badge-orange { background:#3A2A10; color:#F0A050; padding:2px 10px; border:1px solid #B87020; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; }
+  .badge-red    { background:#3A1010; color:#E08080; padding:2px 10px; border:1px solid #B04040; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; }
 
-  h1,h2,h3 { color: #0A1F4E !important; font-family: 'Barlow Condensed', sans-serif !important;
-    text-transform: uppercase; letter-spacing: 0.04em; }
+  /* Headings */
+  h1, h2, h3 {
+    color: #F5F0E8 !important;
+    font-family: 'Barlow Condensed', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  /* Form labels */
   .stSelectbox label, .stNumberInput label, .stSlider label {
-    color: #5B8DD9 !important; font-family: 'IBM Plex Mono', monospace !important;
-    font-size: 0.75rem !important; text-transform: uppercase; letter-spacing: 0.08em; }
+    color: #B8CCE8 !important;
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* Metric containers (Streamlit native) */
   div[data-testid="metric-container"] {
-    background: #ffffff; border: 1px solid #D0DCF0; border-radius: 0; padding: 12px;
+    background: #0D264A;
+    border: 1px solid #2A4878;
+    border-radius: 0;
+    padding: 12px;
   }
-  div[data-testid="metric-container"] label { color: #5B8DD9 !important; }
-  div[data-testid="metric-container"] [data-testid="metric-value"] { color: #0A1F4E !important; }
+  div[data-testid="metric-container"] label {
+    color: #B8CCE8 !important;
+  }
+  div[data-testid="metric-container"] [data-testid="metric-value"] {
+    color: #F5F0E8 !important;
+  }
 
+  /* Buttons */
   .stButton > button {
-    background: #0A1F4E; color: #ffffff; border: none; border-radius: 0;
-    font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem;
-    text-transform: uppercase; letter-spacing: 0.08em;
+    background: #C9A84C;
+    color: #0A1F4E;
+    border: none;
+    border-radius: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
   }
-  .stButton > button:hover { background: #1246A0; }
+  .stButton > button:hover {
+    background: #D8B85C;
+    color: #0A1F4E;
+  }
 
-  .reg-box { padding: 16px; margin: 8px 0; border-left: 4px solid; }
-  .reg-box.green  { background: #f0faf5; border-color: #1a6040; }
-  .reg-box.yellow { background: #EDF4FC; border-color: #1246A0; }
-  .reg-box.orange { background: #fff4e8; border-color: #8a4000; }
-  .reg-box.red    { background: #fff0f0; border-color: #7a1010; }
+  /* Info / warning boxes (Streamlit built-in) */
+  .stAlert {
+    background-color: #112B52 !important;
+    border-left: 4px solid #C9A84C !important;
+  }
+  .stAlert p {
+    color: #E0E9F5 !important;
+  }
 
-  .stDataFrame { border: 1px solid #D0DCF0; }
+  /* Dataframe */
+  .stDataFrame {
+    border: 1px solid #2A4878;
+    background-color: #0D264A;
+  }
+  .stDataFrame table {
+    color: #E0E9F5;
+  }
+  .stDataFrame th {
+    background-color: #112B52;
+    color: #C9A84C;
+  }
+  .stDataFrame td {
+    background-color: #0D264A;
+    color: #E0E9F5;
+  }
+
+  /* General text */
+  p, li, div:not(.stAlert):not(.stMarkdown) {
+    color: #E0E9F5;
+  }
+  a {
+    color: #7A9AD6;
+  }
+  hr {
+    border-color: #2A4878;
+  }
+  /* Code blocks */
+  code {
+    background-color: #112B52;
+    color: #E0E9F5;
+  }
+  /* Adjust expander */
+  .streamlit-expanderHeader {
+    background-color: #0D264A;
+    color: #F5F0E8;
+  }
+  .streamlit-expanderContent {
+    background-color: #0A1F4E;
+  }
 </style>
 """, unsafe_allow_html=True)
 
 # ── sidebar ────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("## ⚡ StediPay")
-    st.markdown("<small style='color:#8AAED6'>Stablecoin Payment Infrastructure<br>v0.2-pilot  |  April 2026 regulatory update</small>", unsafe_allow_html=True)
+    st.markdown("<small style='color:#B8CCE8'>Stablecoin Payment Infrastructure<br>v0.2-pilot  |  April 2026 regulatory update</small>", unsafe_allow_html=True)
     st.divider()
     page = st.radio("Navigate", [
         "🏠  Overview",
@@ -139,8 +246,8 @@ with st.sidebar:
         "⚖️   EU Regulatory Matrix",
     ])
     st.divider()
-    st.markdown("<small style='color:#8AAED6'>Portfolio project by<br><b style='color:#C4D8F0'>Hasret Ozan Sevim</b><br>PhD Candidate · Researcher<br>University of Camerino and Catholic University of Sacred Heart<br><br>© 2024–2026 Hasret Ozan Sevim<br><span style='color:#333'>BUSL-1.1 Licence</span></small>", unsafe_allow_html=True)
-    st.markdown("<a href='https://github.com/EconoDLT/Stedipay' style='color:#5DBCD2;font-size:0.8rem'>GitHub →</a>", unsafe_allow_html=True)
+    st.markdown("<small style='color:#B8CCE8'>Portfolio project by<br><b style='color:#E8C87A'>Hasret Ozan Sevim</b><br>PhD Candidate · Researcher<br>University of Camerino and Catholic University of Sacred Heart<br><br>© 2024–2026 Hasret Ozan Sevim<br><span style='color:#8899AA'>BUSL-1.1 Licence</span></small>", unsafe_allow_html=True)
+    st.markdown("<a href='https://github.com/EconoDLT/Stedipay' style='color:#7A9AD6;font-size:0.8rem'>GitHub →</a>", unsafe_allow_html=True)
 
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -150,7 +257,7 @@ if "Overview" in page:
     st.markdown("# ⚡ StediPay")
     st.markdown("### Smart Stablecoin Payments — with Smart Swap Engine")
     st.markdown("""
-    <p style='color:#8899AA;max-width:720px'>
+    <p style='color:#B8CCE8;max-width:720px'>
     StediPay enables neobanks to issue a card that settles in EURC/USDC on-chain,
     while a rules-bound AI agent automatically farms yield on idle reserves across the top audited lending protocols.
     Built for full EU regulatory compliance: MiCA, TFR zero-threshold Travel Rule, PSD3/PSR technical service provider model, DORA, and AI Act.
@@ -213,7 +320,7 @@ if "Overview" in page:
             st.markdown(f"""
             <div style='margin:6px 0;'>
               <span style='color:#C9A84C;font-weight:600;font-size:0.85rem'>{k}</span><br>
-              <span style='color:#8899AA;font-size:0.8rem;font-family:"IBM Plex Mono",monospace'>{v}</span>
+              <span style='color:#A0B8D8;font-size:0.8rem;font-family:"IBM Plex Mono",monospace'>{v}</span>
             </div>
             """, unsafe_allow_html=True)
 
@@ -232,7 +339,7 @@ if "Overview" in page:
 # ══════════════════════════════════════════════════════════════════════════
 elif "Payment Simulator" in page:
     st.markdown("# 💳 Payment Simulator")
-    st.markdown("<p style='color:#8899AA'>Simulate a card payment through StediPay infrastructure (Polygon Amoy testnet) — includes Travel Rule data flow</p>", unsafe_allow_html=True)
+    st.markdown("<p style='color:#B8CCE8'>Simulate a card payment through StediPay infrastructure (Polygon Amoy testnet) — includes Travel Rule data flow</p>", unsafe_allow_html=True)
 
     col1, col2 = st.columns([1, 1])
     with col1:
@@ -268,23 +375,23 @@ elif "Payment Simulator" in page:
 
                 st.success("✅ Payment simulated successfully — Travel Rule packet transmitted")
                 st.markdown(f"""
-                <div style='background:#f0faf5;border:1px solid #a0d8b8;border-radius:8px;padding:16px;margin-top:8px'>
-                  <div style='color:#1a6040;font-weight:700;font-size:1rem;margin-bottom:8px'>Transaction Confirmed + Travel Rule Transmitted</div>
+                <div style='background:#0D264A;border:1px solid #2A4878;border-radius:8px;padding:16px;margin-top:8px'>
+                  <div style='color:#C9A84C;font-weight:700;font-size:1rem;margin-bottom:8px'>Transaction Confirmed + Travel Rule Transmitted</div>
                   <div class='tx-hash'>Tx hash: {tx_hash[:42]}...</div>
                   <br>
-                  <table style='color:#06102B;font-size:0.85rem;width:100%'>
-                    <tr><td style='color:#8899AA'>Amount</td><td><b>{amount:.2f} {currency.split()[0]}</b></td></tr>
-                    <tr><td style='color:#8899AA'>Network</td><td>{net}</td></tr>
-                    <tr><td style='color:#8899AA'>Settlement time</td><td style='color:#C9A84C'>{settlement_time}s</td></tr>
-                    <tr><td style='color:#8899AA'>Gas cost</td><td>${gas_usd}</td></tr>
-                    <tr><td style='color:#8899AA'>Travel Rule ref</td><td><span class='tx-hash'>{tr_ref}</span></td></tr>
-                    <tr><td style='color:#8899AA'>TFR Art. 14 data</td><td><span class='badge-green'>TRANSMITTED</span></td></tr>
-                    <tr><td style='color:#8899AA'>KYC/AML check</td><td><span class='badge-green'>PASS — Chainalysis KYT</span></td></tr>
-                    <tr><td style='color:#8899AA'>Beneficiary CASP</td><td><span class='badge-green'>TFR Art. 15 data received</span></td></tr>
-                    <tr><td style='color:#8899AA'>DORA event log</td><td><span class='badge-teal'>RECORDED</span></td></tr>
-                    <tr><td style='color:#8899AA'>CARF record</td><td><span class='badge-teal'>CREATED</span></td></tr>
-                    <tr><td style='color:#8899AA'>Yield re-deployed</td><td><span class='badge-gold'>{'Yes → AAVE v3 (~4.8% APY)' if yield_enabled else 'Disabled'}</span></td></tr>
-                  </table>
+                  <table style='color:#E0E9F5;font-size:0.85rem;width:100%'>
+                    <tr><td style='color:#B8CCE8'>Amount</td><td><b>{amount:.2f} {currency.split()[0]}</b></td></tr>
+                    <tr><td style='color:#B8CCE8'>Network</td><td>{net}</td></tr>
+                    <tr><td style='color:#B8CCE8'>Settlement time</td><td style='color:#C9A84C'>{settlement_time}s</td></tr>
+                    <tr><td style='color:#B8CCE8'>Gas cost</td><td>${gas_usd}</td></tr>
+                    <tr><td style='color:#B8CCE8'>Travel Rule ref</td><td><span class='tx-hash'>{tr_ref}</span></td></tr>
+                    <tr><td style='color:#B8CCE8'>TFR Art. 14 data</td><td><span class='badge-green'>TRANSMITTED</span></td></tr>
+                    <tr><td style='color:#B8CCE8'>KYC/AML check</td><td><span class='badge-green'>PASS — Chainalysis KYT</span></td></tr>
+                    <tr><td style='color:#B8CCE8'>Beneficiary CASP</td><td><span class='badge-green'>TFR Art. 15 data received</span></td></tr>
+                    <tr><td style='color:#B8CCE8'>DORA event log</td><td><span class='badge-teal'>RECORDED</span></td></tr>
+                    <tr><td style='color:#B8CCE8'>CARF record</td><td><span class='badge-teal'>CREATED</span></td></tr>
+                    <tr><td style='color:#B8CCE8'>Yield re-deployed</td><td><span class='badge-gold'>{'Yes → AAVE v3 (~4.8% APY)' if yield_enabled else 'Disabled'}</span></td></tr>
+                   </table>
                 </div>
                 """, unsafe_allow_html=True)
 
@@ -305,10 +412,10 @@ elif "Payment Simulator" in page:
                        "#8247E5","#627EEA","#2ECC71","#E67E22","#5DBCD2"]
             ),
             link=dict(source=source, target=target, value=value,
-                      color=["rgba(18,70,160,0.15)"]*len(source))
+                      color=["rgba(201,168,76,0.2)"]*len(source))
         ))
         fig.update_layout(
-            paper_bgcolor="#F4F7FC", font_color="#06102B", font_size=11,
+            paper_bgcolor="#0A1F4E", plot_bgcolor="#0D264A", font_color="#E0E9F5", font_size=11,
             margin=dict(l=10,r=10,t=10,b=10), height=380
         )
         st.plotly_chart(fig, use_container_width=True)
@@ -330,13 +437,13 @@ elif "Payment Simulator" in page:
             ("00:01:515", "YIELD_MODULE",        "Residual 85% → Vault deposit: ~4.8% APY", "INFO"),
         ]
         for ts, module, msg, typ in logs:
-            color = {"INFO":"#8899AA","PASS":"#2ECC71","CONFIRM":"#C9A84C"}.get(typ,"#8899AA")
+            color = {"INFO":"#B8CCE8","PASS":"#2ECC71","CONFIRM":"#C9A84C"}.get(typ,"#B8CCE8")
             st.markdown(f"""
             <div style='font-family:"IBM Plex Mono",monospace;font-size:0.73rem;
-                        padding:3px 0;border-bottom:1px solid #D0DCF0'>
-              <span style='color:#8AAED6'>{ts}</span>
+                        padding:3px 0;border-bottom:1px solid #2A4878'>
+              <span style='color:#7A9AD6'>{ts}</span>
               <span style='color:{color};margin:0 8px'>[{module}]</span>
-              <span style='color:#2E4A7A'>{msg}</span>
+              <span style='color:#D0DCF0'>{msg}</span>
             </div>
             """, unsafe_allow_html=True)
 
@@ -346,7 +453,7 @@ elif "Payment Simulator" in page:
 # ══════════════════════════════════════════════════════════════════════════
 elif "Reserve Dashboard" in page:
     st.markdown("# 📊 Reserve Dashboard")
-    st.markdown("<p style='color:#8899AA'>Yield strategy allocation and performance. Yield reserves kept strictly separate from MiCA Art. 48 regulatory reserve (simulated data).</p>", unsafe_allow_html=True)
+    st.markdown("<p style='color:#B8CCE8'>Yield strategy allocation and performance. Yield reserves kept strictly separate from MiCA Art. 48 regulatory reserve (simulated data).</p>", unsafe_allow_html=True)
 
     col1, col2, col3, col4 = st.columns(4)
     with col1: st.metric("Total AUM (EURC)", "€2,847,200", "+€124,300")
@@ -372,9 +479,10 @@ elif "Reserve Dashboard" in page:
             hole=0.6,
             marker_colors=colors_p,
             textfont_size=11,
+            textfont_color="#E0E9F5"
         ))
         fig_donut.update_layout(
-            paper_bgcolor="#F4F7FC", font_color="#06102B",
+            paper_bgcolor="#0A1F4E", font_color="#E0E9F5",
             showlegend=True, legend_font_size=10,
             margin=dict(l=0,r=0,t=0,b=0), height=300,
             annotations=[dict(text="~4.6%<br>blended", x=0.5, y=0.5,
@@ -386,11 +494,11 @@ elif "Reserve Dashboard" in page:
             usd = 2847200 * al / 100
             st.markdown(f"""
             <div style='display:flex;justify-content:space-between;align-items:center;
-                        background:#1B2A4A;border-radius:6px;padding:8px 12px;margin:4px 0;
+                        background:#0D264A;border-radius:6px;padding:8px 12px;margin:4px 0;
                         border-left:3px solid {c}'>
               <div>
                 <div style='color:#F5F0E8;font-size:0.85rem;font-weight:600'>{p}</div>
-                <div style='color:#8899AA;font-size:0.75rem'>€{usd:,.0f} deployed</div>
+                <div style='color:#B8CCE8;font-size:0.75rem'>€{usd:,.0f} deployed</div>
               </div>
               <div style='color:#C9A84C;font-weight:700;font-size:1rem'>{a:.2f}%</div>
             </div>
@@ -407,18 +515,18 @@ elif "Reserve Dashboard" in page:
         fig_line.add_trace(go.Scatter(
             x=dates, y=cumulative, mode="lines", name="Cumulative yield",
             line=dict(color="#C9A84C", width=2.5),
-            fill="tozeroy", fillcolor="rgba(201,168,76,0.08)"
+            fill="tozeroy", fillcolor="rgba(201,168,76,0.1)"
         ))
         fig_line.add_trace(go.Bar(
             x=dates, y=daily, name="Daily yield (EUR)",
             marker_color="#0E7C7B", opacity=0.6, yaxis="y2"
         ))
         fig_line.update_layout(
-            paper_bgcolor="#F4F7FC", plot_bgcolor="#EDF4FC", font_color="#06102B", height=280,
-            xaxis=dict(gridcolor="#D0DCF0"),
-            yaxis=dict(title="Cumulative EUR", gridcolor="#D0DCF0", title_font_color="#C9A84C"),
+            paper_bgcolor="#0A1F4E", plot_bgcolor="#0D264A", font_color="#E0E9F5", height=280,
+            xaxis=dict(gridcolor="#2A4878", title_font_color="#C9A84C"),
+            yaxis=dict(title="Cumulative EUR", gridcolor="#2A4878", title_font_color="#C9A84C"),
             yaxis2=dict(title="Daily EUR", overlaying="y", side="right", title_font_color="#0E7C7B"),
-            legend=dict(bgcolor="#F4F7FC", font_size=10),
+            legend=dict(bgcolor="#0A1F4E", font_size=10),
             margin=dict(l=10,r=10,t=10,b=10)
         )
         st.plotly_chart(fig_line, use_container_width=True)
@@ -438,7 +546,7 @@ elif "Reserve Dashboard" in page:
 # ══════════════════════════════════════════════════════════════════════════
 elif "Agent Activity" in page:
     st.markdown("# 🤖 AI Agent Activity Log")
-    st.markdown("<p style='color:#8899AA'>Rules-bound agent invocations — last 100 actions (Polygon Amoy testnet). All modules operate within permission-scoped boundaries encoded in StediPayRegistry.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='color:#B8CCE8'>Rules-bound agent invocations — last 100 actions (Polygon Amoy testnet). All modules operate within permission-scoped boundaries encoded in StediPayRegistry.</p>", unsafe_allow_html=True)
 
     st.warning("⚠️ **AI Act note:** The StediPay AI Agent is classified as a likely **high-risk AI system (Annex III §5(b))** due to its autonomous financial decisions. Conformity assessment, human oversight mechanism, and EU AI database registration are required before commercial deployment (deadline: 2 Aug 2026). This testnet demo operates under human review at all stages.")
 
@@ -458,8 +566,8 @@ elif "Agent Activity" in page:
         colors_m = ["#C9A84C","#E67E22","#8247E5","#E67E22","#0E7C7B","#627EEA","#2ECC71"]
         fig_bar = go.Figure(go.Bar(x=counts, y=modules, orientation="h", marker_color=colors_m, opacity=0.85))
         fig_bar.update_layout(
-            paper_bgcolor="#F4F7FC", plot_bgcolor="#EDF4FC", font_color="#06102B", height=300,
-            xaxis=dict(gridcolor="#D0DCF0"), yaxis=dict(gridcolor="#D0DCF0"),
+            paper_bgcolor="#0A1F4E", plot_bgcolor="#0D264A", font_color="#E0E9F5", height=300,
+            xaxis=dict(gridcolor="#2A4878"), yaxis=dict(gridcolor="#2A4878"),
             margin=dict(l=0,r=10,t=0,b=0)
         )
         st.plotly_chart(fig_bar, use_container_width=True)
@@ -490,18 +598,18 @@ elif "Agent Activity" in page:
             c = color_opts[mod_i]
             tx = f"0x{random.randint(10**38,10**39):x}"[:18]+"..."
             rows += f"""
-            <tr style='border-bottom:1px solid #D0DCF0'>
-              <td style='color:#555;font-family:"IBM Plex Mono",monospace;font-size:0.72rem;padding:5px 4px'>{ts}</td>
+            <tr style='border-bottom:1px solid #2A4878'>
+              <td style='color:#B8CCE8;font-family:"IBM Plex Mono",monospace;font-size:0.72rem;padding:5px 4px'>{ts}</td>
               <td style='font-size:0.75rem;padding:5px 4px'><span style='color:{c};font-weight:600'>{mod}</span></td>
-              <td style='color:#CCC;font-size:0.75rem;padding:5px 4px'>{act}</td>
+              <td style='color:#E0E9F5;font-size:0.75rem;padding:5px 4px'>{act}</td>
               <td style='padding:5px 4px'><span style='background:{c}22;color:{c};padding:2px 7px;border-radius:10px;font-size:0.7rem'>{status}</span></td>
-              <td style='color:#5DBCD2;font-family:"IBM Plex Mono",monospace;font-size:0.68rem;padding:5px 4px'>{tx}</td>
+              <td style='color:#7A9AD6;font-family:"IBM Plex Mono",monospace;font-size:0.68rem;padding:5px 4px'>{tx}</td>
             </tr>
             """
         st.markdown(f"""
-        <table style='width:100%;border-collapse:collapse'>
+        <table style='width:100%;border-collapse:collapse;background:#0D264A'>
           <thead>
-            <tr style='color:#8899AA;font-size:0.75rem;text-transform:uppercase'>
+            <tr style='color:#C9A84C;font-size:0.75rem;text-transform:uppercase'>
               <th style='text-align:left;padding:6px 4px'>Time</th>
               <th style='text-align:left;padding:6px 4px'>Module</th>
               <th style='text-align:left;padding:6px 4px'>Action</th>
@@ -515,12 +623,11 @@ elif "Agent Activity" in page:
 
 
 # ══════════════════════════════════════════════════════════════════════════
-# TRAVEL RULE CHECKER
+# SMART SWAP ENGINE
 # ══════════════════════════════════════════════════════════════════════════
-
 elif "Smart Swap" in page:
     st.markdown("# 🔄 Smart Swap Engine")
-    st.markdown("<p style=\'color:#5B8DD9\'>Real-time EMT price scan and best-execution swap at point of payment. MiCA Art. 78 compliant. Simulated data — April 2026.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='color:#B8CCE8'>Real-time EMT price scan and best-execution swap at point of payment. MiCA Art. 78 compliant. Simulated data — April 2026.</p>", unsafe_allow_html=True)
 
     st.info("**Legal basis:** The Smart Swap Engine is structured as a **best-execution service** under MiCA Art. 78, not yield on EMT holdings (prohibited under MiCA Art. 40/50). The engine generates a price improvement on an active transaction, not interest paid for holding time. Only MiCA-authorised EMTs from the ESMA registry are used.")
 
@@ -557,7 +664,6 @@ elif "Smart Swap" in page:
                 with st.spinner("Scanning whitelisted EMT pools on Polygon PoS..."):
                     _time.sleep(1.2)
 
-                # Simulate pool prices — small realistic deviations from parity
                 _random.seed(int(payment_amount * 100))
                 pool_prices = {t: 1.0 + _random.uniform(-0.0025, 0.0025) for t in whitelist}
                 current_emt = payment_emt.split()[0]
@@ -584,17 +690,17 @@ elif "Smart Swap" in page:
                 if swap_executed:
                     st.success(f"✅ Swap executed — {current_emt} → {best_token} — Cashback: **€{net_cashback:.4f}**")
                     st.markdown(f"""
-                    <div style=\'background:#f0faf5;border:1px solid #a0d8b8;padding:16px;margin-top:8px\'>
-                      <table style=\'color:#06102B;font-size:0.85rem;width:100%\'>
-                        <tr><td style=\'color:#5B8DD9\'>EMT swapped</td><td><b>{current_emt} → {best_token}</b></td></tr>
-                        <tr><td style=\'color:#5B8DD9\'>Spread captured</td><td><b>{spread_bps} bps ({spread_bps/100:.2f}%)</b></td></tr>
-                        <tr><td style=\'color:#5B8DD9\'>Gross gain</td><td>€{(best_price-current_price)*payment_amount:.4f}</td></tr>
-                        <tr><td style=\'color:#5B8DD9\'>Gas cost</td><td>€{gas_cost_eur:.4f}</td></tr>
-                        <tr><td style=\'color:#5B8DD9\'>User cashback (80%)</td><td style=\'color:#1a6040\'><b>€{net_cashback:.4f}</b></td></tr>
-                        <tr><td style=\'color:#5B8DD9\'>Protocol (20%)</td><td>€{net_cashback*0.25:.4f}</td></tr>
-                        <tr><td style=\'color:#5B8DD9\'>Legal basis</td><td>MiCA Art. 78 best-execution</td></tr>
-                        <tr><td style=\'color:#5B8DD9\'>Tx hash</td><td style=\'font-family:monospace;font-size:0.72rem\'>{tx_hash}...</td></tr>
-                      </table>
+                    <div style='background:#0D264A;border:1px solid #2A4878;padding:16px;margin-top:8px'>
+                      <table style='color:#E0E9F5;font-size:0.85rem;width:100%'>
+                        <tr><td style='color:#B8CCE8'>EMT swapped</td><td><b>{current_emt} → {best_token}</b></td></tr>
+                        <tr><td style='color:#B8CCE8'>Spread captured</td><td><b>{spread_bps} bps ({spread_bps/100:.2f}%)</b></td></tr>
+                        <tr><td style='color:#B8CCE8'>Gross gain</td><td>€{(best_price-current_price)*payment_amount:.4f}</td></tr>
+                        <tr><td style='color:#B8CCE8'>Gas cost</td><td>€{gas_cost_eur:.4f}</td></tr>
+                        <tr><td style='color:#B8CCE8'>User cashback (80%)</td><td style='color:#C9A84C'><b>€{net_cashback:.4f}</b></td></tr>
+                        <tr><td style='color:#B8CCE8'>Protocol (20%)</td><td>€{net_cashback*0.25:.4f}</td></tr>
+                        <tr><td style='color:#B8CCE8'>Legal basis</td><td>MiCA Art. 78 best-execution</td></tr>
+                        <tr><td style='color:#B8CCE8'>Tx hash</td><td style='font-family:monospace;font-size:0.72rem'>{tx_hash}...</td></tr>
+                       </table>
                     </div>
                     """, unsafe_allow_html=True)
                 else:
@@ -611,28 +717,31 @@ elif "Smart Swap" in page:
                     ("Atomic revert protection", "Swap contract coded to revert if any step is loss-making", "PASS"),
                 ]
                 for label, detail, status in checks:
-                    color = "#1a6040" if status == "PASS" else "#8a4000"
-                    bg = "#f0faf5" if status == "PASS" else "#fff4e8"
+                    color = "#5CD99A" if status == "PASS" else "#E08080"
+                    bg = "#0D264A"
                     st.markdown(f"""
-                    <div style=\'background:{bg};border-left:3px solid {color};padding:8px 14px;margin:4px 0\'>
-                      <span style=\'color:{color};font-weight:600;font-size:0.82rem\'>{status}</span>
-                      <span style=\'color:#06102B;font-size:0.82rem;margin-left:10px\'>{label}</span>
-                      <div style=\'color:#4a6070;font-size:0.76rem;margin-top:2px\'>{detail}</div>
+                    <div style='background:{bg};border-left:3px solid {color};padding:8px 14px;margin:4px 0'>
+                      <span style='color:{color};font-weight:600;font-size:0.82rem'>{status}</span>
+                      <span style='color:#E0E9F5;font-size:0.82rem;margin-left:10px'>{label}</span>
+                      <div style='color:#B8CCE8;font-size:0.76rem;margin-top:2px'>{detail}</div>
                     </div>
                     """, unsafe_allow_html=True)
         else:
             st.markdown("""
-            <div style=\'background:#EDF4FC;padding:32px;text-align:center;margin-top:40px\'>
-              <div style=\'font-size:1.5rem;color:#1246A0;margin-bottom:10px\'>🔄</div>
-              <div style=\'color:#5B8DD9;font-size:0.95rem\'>Configure your whitelist and click <b>Run Smart Swap Simulation</b> to see the engine in action.</div>
-              <div style=\'color:#8AAED6;font-size:0.82rem;margin-top:12px\'>The engine scans live pool prices across Uniswap v4 and Curve,<br>selects the best EMT, and credits the spread surplus as cashback.</div>
+            <div style='background:#0D264A;padding:32px;text-align:center;margin-top:40px;border:1px solid #2A4878'>
+              <div style='font-size:1.5rem;color:#C9A84C;margin-bottom:10px'>🔄</div>
+              <div style='color:#B8CCE8;font-size:0.95rem'>Configure your whitelist and click <b>Run Smart Swap Simulation</b> to see the engine in action.</div>
+              <div style='color:#8899AA;font-size:0.82rem;margin-top:12px'>The engine scans live pool prices across Uniswap v4 and Curve,<br>selects the best EMT, and credits the spread surplus as cashback.</div>
             </div>
             """, unsafe_allow_html=True)
 
 
+# ══════════════════════════════════════════════════════════════════════════
+# TRAVEL RULE CHECKER
+# ══════════════════════════════════════════════════════════════════════════
 elif "Travel Rule" in page:
     st.markdown("# 🛂 Travel Rule Compliance Checker")
-    st.markdown("<p style='color:#8899AA'>EU Transfer of Funds Regulation (Reg. EU 2023/1113) — in force since 30 Dec 2024 — zero threshold, all CASP-to-CASP transfers. Analysis by Hasret Ozan Sevim.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='color:#B8CCE8'>EU Transfer of Funds Regulation (Reg. EU 2023/1113) — in force since 30 Dec 2024 — zero threshold, all CASP-to-CASP transfers. Analysis by Hasret Ozan Sevim.</p>", unsafe_allow_html=True)
 
     st.info("**Key fact:** The EU Travel Rule (TFR) has **no de minimis threshold**. Unlike FATF's €1,000 standard, every crypto-asset transfer between CASPs in the EU — regardless of amount — must carry full originator and beneficiary data.")
 
@@ -661,11 +770,9 @@ elif "Travel Rule" in page:
             st.markdown(f"#### Travel Rule Analysis: _{transfer_type}_")
             st.markdown(f"**Amount:** €{amount_tr:.2f}  |  **Role:** {entity}")
 
-            # Zero threshold reminder
             threshold_note = "✅ TFR EU: **zero threshold** — obligations apply regardless of amount."
             st.success(threshold_note)
 
-            # Build analysis
             analyses = {
                 "EURC card payment → merchant CASP wallet": {
                     "TFR obligation": ("green", "FULL", "Full originator data (TFR Art. 14) + beneficiary data (Art. 15) required. Transmit IVMS101 packet to beneficiary CASP simultaneously with EURC transfer."),
@@ -722,11 +829,11 @@ elif "Travel Rule" in page:
             st.warning("⚠️ This tool provides informational analysis only. It does not constitute legal advice. Regulatory analysis by Hasret Ozan Sevim.")
         else:
             st.markdown("""
-            <div style='background:#1B2A4A;border-radius:10px;padding:24px;text-align:center;margin-top:40px'>
+            <div style='background:#0D264A;border-radius:10px;padding:24px;text-align:center;margin-top:40px;border:1px solid #2A4878'>
               <div style='font-size:2rem;margin-bottom:8px'>🛂</div>
-              <div style='color:#8899AA'>Select a transfer type and entity role,<br>then click Analyse to get the Travel Rule obligations.</div>
+              <div style='color:#B8CCE8'>Select a transfer type and entity role,<br>then click Analyse to get the Travel Rule obligations.</div>
               <br>
-              <div style='color:#555;font-size:0.8rem'>Covers: TFR Reg. EU 2023/1113 · EBA/GL/2024/11 · FATF Rec. 15/16<br>In force since 30 Dec 2024 · Zero threshold · No de minimis</div>
+              <div style='color:#8899AA;font-size:0.8rem'>Covers: TFR Reg. EU 2023/1113 · EBA/GL/2024/11 · FATF Rec. 15/16<br>In force since 30 Dec 2024 · Zero threshold · No de minimis</div>
             </div>
             """, unsafe_allow_html=True)
 
@@ -736,7 +843,7 @@ elif "Travel Rule" in page:
 # ══════════════════════════════════════════════════════════════════════════
 elif "Regulatory Matrix" in page:
     st.markdown("# ⚖️ EU Regulatory Matrix")
-    st.markdown("<p style='color:#8899AA'>Complete EU regulatory landscape for stablecoin payment infrastructure — April 2026. Analysis by Hasret Ozan Sevim.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='color:#B8CCE8'>Complete EU regulatory landscape for stablecoin payment infrastructure — April 2026. Analysis by Hasret Ozan Sevim.</p>", unsafe_allow_html=True)
 
     regs = [
         {
