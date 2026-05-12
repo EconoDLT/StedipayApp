@@ -332,7 +332,7 @@ if "Overview" in page:
         st.markdown("### Quick Links")
         for lbl, url in [
             ("📁 GitHub Repository", "https://github.com/EconoDLT/Stedipay"),
-            ("📄 Business Booklet", "#"),
+            ("📄 Business Booklet", "https://github.com/EconoDLT/StedipayApp/StediPay_Business_Booklet.docx"),
             ("🔗 LinkedIn", "https://www.linkedin.com/in/hasret-ozan-sevim"),
         ]:
             st.markdown(f"[{lbl}]({url})")
