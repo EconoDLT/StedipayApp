@@ -55,8 +55,7 @@ st.set_page_config(
     page_title="StediPay — Smart Stablecoin Payments",
     page_icon="⚡",
     layout="wide",
-    initial_sidebar_state="expanded",
-    theme="system"
+    initial_sidebar_state="expanded"
 )
 
 st.markdown(DISCLAIMER_HTML, unsafe_allow_html=True)
