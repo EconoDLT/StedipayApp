@@ -42,7 +42,7 @@ DISCLAIMER_HTML = """
     of any kind with any company, protocol, brand, or mentioned entity.
     All brand names are the property of their respective owners, referenced solely for illustrative purposes.
     Nothing here constitutes financial or legal advice. Smart contracts are unaudited and not for production use.
-  <div style='color:#aaa;font-size:0.78rem;line-height:1.7'>
+  <div style='color:#E67E22;font-weight:700;font-size:0.9rem;margin-bottom:8px'>
     ⚠ Technical Disclaimer — Read Before Using This Demo
   <div style='color:#aaa;font-size:0.78rem;line-height:1.7'>
         <strong style='color:#ccc'>The demo is not currently integrated with a blockchain testnet.</strong>
