@@ -56,6 +56,7 @@ st.set_page_config(
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded",
+    theme="system"
 )
 
 st.markdown(DISCLAIMER_HTML, unsafe_allow_html=True)
