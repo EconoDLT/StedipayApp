@@ -46,9 +46,9 @@ DISCLAIMER_HTML = """
   </div>
   <div style='color:#E67E22;font-weight:700;font-size:0.9rem;margin-bottom:6px'>
     ⚠ Technical Disclaimer — Read Before Using This Demo
-  </div>
   <div style='color:#aaa;font-size:0.78rem;line-height:1.7'>
-    The demo is not currently integrated with a blockchain testnet. The demo of a live blockchain testnet will be integrated with Polygon Amoy and Ethereum Sepolia.
+        <strong style='color:#ccc'>The demo is not currently integrated with a blockchain testnet.</strong>
+        The demo of a live blockchain testnet will be integrated with Polygon Amoy and Ethereum Sepolia.
   </div>
 </div>
 """
