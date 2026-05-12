@@ -44,7 +44,6 @@ DISCLAIMER_HTML = """
     Nothing here constitutes financial or legal advice. Smart contracts are unaudited and not for production use.
     The author accepts no legal or financial liability of any kind.
   </div>
-  </div>
   <div style='color:#E67E22;font-weight:700;font-size:0.9rem;margin-bottom:6px'>
     ⚠ Technical Disclaimer — Read Before Using This Demo
   <div style='color:#aaa;font-size:0.78rem;line-height:1.7'>
