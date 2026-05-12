@@ -43,7 +43,7 @@ DISCLAIMER_HTML = """
     All brand names are the property of their respective owners, referenced solely for illustrative purposes.
     Nothing here constitutes financial or legal advice. Smart contracts are unaudited and not for production use.
   <div style='color:#E67E22;font-weight:700;font-size:0.9rem;margin-bottom:6px'>
-    ⚠ Technical Disclaimer — Read Before Using This Demo
+    ⚠ Technical Disclaimer
   <div style='color:#aaa;font-size:0.78rem;line-height:1.7'>
         <strong style='color:#ccc'>The demo is not currently integrated with a blockchain testnet.</strong>
         The demo of a live blockchain testnet will be integrated with Polygon Amoy and Ethereum Sepolia.
