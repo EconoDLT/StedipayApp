@@ -272,36 +272,7 @@ if "Overview" in page:
 
     st.divider()
 
-# ── Smart Swap Diagram ─────────────────────────────────────────────
-st.markdown("## 🔄 How the Smart Swap Engine Works")
-
-st.image(
-    "Stedipay_Diagram.png",
-    caption="StediPay Smart Swap Engine — Euro Stablecoin Arbitrage Cashback Flow",
-    use_container_width=True
-)
-
-st.markdown("""
-<div style='background:#0D264A;
-            border:1px solid #2A4878;
-            border-left:4px solid #C9A84C;
-            padding:18px 22px;
-            margin-top:10px;
-            margin-bottom:25px;
-            color:#B8CCE8;
-            line-height:1.8;'>
-
-<b style='color:#F5F0E8'>How it works:</b><br><br>
-
-• Customer pays <b>100 EURC</b> with the StediPay card.<br>
-• Smart Swap pauses settlement for ~6–8 seconds.<br>
-• StediPay scans Euro stablecoin liquidity pools (EUROe, EURCV, etc.).<br>
-• If no cheaper route exists → transaction settles normally in EURC.<br>
-• If another Euro stablecoin trades cheaper → StediPay executes smart swap arbitrage.<br>
-• Net savings after fees are periodically cashbacked to the customer.
-
-</div>
-""", unsafe_allow_html=True)
+    st.image("Stedipay_Diagram.png", use_container_width=True)
             
     col1, col2, col3, col4, col5 = st.columns(5)
     metrics = [
