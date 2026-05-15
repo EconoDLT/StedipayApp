@@ -273,7 +273,9 @@ if "Overview" in page:
     st.divider()
 
     st.image("Stedipay_Diagram.png", use_container_width=True)
-            
+
+    st.divider()
+
     col1, col2, col3, col4, col5 = st.columns(5)
     metrics = [
         (col1, "Testnet Tx", "12,847", "+3.2%"),
